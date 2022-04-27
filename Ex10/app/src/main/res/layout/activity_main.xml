@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lbResultado"
+        android:layout_width="313dp"
+        android:layout_height="172dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:layout_marginBottom="71dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDolar" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="125dp"
+        android:text="Desenvolvido por 404"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnDolar"
+        android:layout_width="107dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#838080"
+        android:text="dolar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtValor" />
+
+    <Button
+        android:id="@+id/btnReal"
+        android:layout_width="102dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="61dp"
+        android:background="#757272"
+        android:text="Real"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/lbResultado"
+        app:layout_constraintEnd_toStartOf="@+id/btnDolar"
+        app:layout_constraintStart_toEndOf="@+id/btnKuanza"
+        app:layout_constraintTop_toBottomOf="@+id/txtValor" />
+
+    <Button
+        android:id="@+id/btnKuanza"
+        android:layout_width="102dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="61dp"
+        android:width="20sp"
+        android:background="#717070"
+        android:text="Kwanza"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/lbResultado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtValor" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:layout_marginBottom="50dp"
+        android:text="Conversor de Moeda"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtValor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtValor"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="55dp"
+        android:ems="10"
+        android:hint="insira o valor em euros"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btnDolar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

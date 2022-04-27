@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conversor de Moeda"
+            android:textSize="34sp"
+            android:translationX="50sp"
+            android:translationY="30sp" />
+
+        <EditText
+            android:id="@+id/txtValor"
+            android:layout_width="358dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="insira o valor em euros"
+            android:inputType="number"
+            android:translationX="25sp"
+            android:translationY="100sp" />
+
+        <Button
+            android:id="@+id/btnKuanza"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:width="20sp"
+            android:background="#717070"
+            android:text="Kwanza"
+            android:textColor="#FFFFFF"
+            android:translationX="22sp"
+            android:translationY="120sp" />
+
+        <Button
+            android:id="@+id/btnReal"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:background="#757272"
+            android:text="Real"
+            android:textColor="#FFFFFF"
+            android:translationX="145sp"
+            android:translationY="72sp" />
+
+        <Button
+            android:id="@+id/btnDolar"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:background="#838080"
+            android:text="dolar"
+            android:textColor="#FFFFFF"
+            android:translationX="275sp"
+            android:translationY="24sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:text="Desenvolvido por 404"
+            android:textSize="24sp"
+            android:translationX="20sp"
+            android:translationY="300sp" />
+
+        <TextView
+            android:id="@+id/lbResultado"
+            android:layout_width="313dp"
+            android:layout_height="172dp"
+            android:translationX="50sp"
+            android:translationY="40sp" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
